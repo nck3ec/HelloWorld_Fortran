@@ -21,7 +21,7 @@ program HelloAgainWorldF90
 
   !do something to the array, like loop over it and multiply by 2
   do i=0,n
-   x(i) = x(i) * 2
+   x(i) = (x(i) * 2) + 4
   end do
 
   write(*,*) "Done my calculations."
