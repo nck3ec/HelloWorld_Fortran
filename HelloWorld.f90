@@ -7,6 +7,7 @@
 
 
 program HelloAgainWorldF90
+  use DoCalculation
   real, dimension(:), allocatable :: x ! array that we will read into
   integer :: n 			! value that is read from file
 
@@ -19,10 +20,14 @@ program HelloAgainWorldF90
   allocate(x(n))
   read(99,*) x 			!now read in the array
 
+
+  ! Call the DoCalculationF90 Subroutine
+  call calculate
+
   !do something to the array, like loop over it and multiply by 2
-  do i=1,n
-   x(i) = x(i) * 2
-  end do
+  !do i=1,n
+  !  x(i) = x(i) * 2
+  !end do
 
   write(*,*) "Done my calculations."
   open(unit=89, file='IAmHere.txt', status='replace', action='write')
