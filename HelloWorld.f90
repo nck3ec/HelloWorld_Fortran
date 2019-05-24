@@ -22,7 +22,7 @@ program HelloAgainWorldF90
 
 
   ! Call the DoCalculationF90 Subroutine
-  call calculate
+  call calculate(x,n)
 
   !do something to the array, like loop over it and multiply by 2
   !do i=1,n
