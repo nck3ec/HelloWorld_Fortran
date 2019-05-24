@@ -8,7 +8,7 @@ contains
 
 
 ! Calculation from HelloAgainWorldF90
-subroutine calculate (x,n)
+subroutine calculate(x,n)
 
   integer :: n ,i ! value that is read from file
   real, dimension(:), allocatable :: x ! array that we read into
