@@ -1,6 +1,6 @@
 ! Subroutine that is called by HelloAgainWorldF90 to do the operation
 
-module DoCalculationF90
+module DoCalculation
   ! Parameter
   integer :: n 			! value that is read from file
 
